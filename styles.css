@@ -806,7 +806,7 @@ footer {
     }
     
     .about-image {
-        max-height: 300px;
+        max-height: 75%;
     }
     
     .skills-content, 
