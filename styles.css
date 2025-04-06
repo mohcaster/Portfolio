@@ -66,12 +66,20 @@ nav {
 
 
 .info {
-    margin-top: 20px;
-    font-size: 1 rem;
-    color: var(--accent); /* Change the color to match your theme */
-    text-align: center;
+  margin-top: 20px;
+  font-size: 1rem; /* Fixed spacing issue */
+  color: var(--accent); /* Change the color to match your theme */
+  text-align: center;
+  transition: color 0.3s ease; /* Smooth transition for color change */
 }
 
+/* Reverse the color of the text when hovering */
+.info:hover p {
+  color: var(--white); /* Change this to the hover color you want */
+  background-color: var(--accent); /* Optional: Adds a background color on hover */
+  -webkit-background-clip: text; /* Applies background color only to the text */
+  color: var(--white); /* Ensures the text color remains transparent */
+}
 
 
 .nav-links a:hover {
@@ -92,7 +100,7 @@ nav {
 
 @keyframes s {
   to {
-    transform: scale3d(0.2, 0.2, 0.2);
+    transform: scale3d(0.1, 0.1, 0.1);
   }
 }
 
@@ -148,9 +156,9 @@ nav {
   
   .item {
     margin: -1.5625em;
-    width: 3.125em;
-    height: 3.125em;
-    transform-origin: 50% 50% -1.5625em;
+    width: 1.125em;
+    height: 1.125em;
+    transform-origin: 50% 50% -0.5625em;
     box-shadow: 0 0 0.125em currentColor;
     background: currentColor;
     animation: s 0.6s cubic-bezier(0.45, 0.03, 0.51, 0.95) infinite alternate;
@@ -274,13 +282,24 @@ section {
     background-color: var(--secondary);
 }
 
+
 .hero-content h1 {
-    font-size: 3.9rem;
-    font-weight: 600;
-    color: var(--accent);
-    margin-bottom: 1rem;
-    letter-spacing: -0.5px;
+  font-size: 4rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 1rem;
+  letter-spacing: -1px;
+  transition: color 0.3s ease; /* Smooth transition for color change */
 }
+
+.hero-content h1:hover{
+
+  color: var(--white); /* Change this to whatever color you want on hover */
+  background-color: var(--accent); /* Optional: Adds a background color on hover */
+  -webkit-background-clip: text; /* Applies background color only to the text */
+  color: var(--white);}
+
+
 
 .hero-content p {
     font-size: 1.5rem;
@@ -289,6 +308,19 @@ section {
     margin-bottom: 2rem;
     opacity: 0.8;
 }
+.hero-content p:hover{
+
+  color: var(--white); /* Change this to whatever color you want on hover */
+  background-color: var(--accent); /* Optional: Adds a background color on hover */
+  -webkit-background-clip: text; /* Applies background color only to the text */
+  color: var(--white);}
+
+.info: hover{
+
+    color: var(--white); /* Change this to whatever color you want on hover */
+    background-color: var(--accent); /* Optional: Adds a background color on hover */
+    -webkit-background-clip: text; /* Applies background color only to the text */
+    color: var(--white);}
 
 .section-title {
     font-size: 2.5rem;
@@ -339,6 +371,14 @@ section {
 
 .skills {
     background-color: var(--white);
+}
+
+
+/* Reverse the color of the text when hovering */
+.skill-card:hover {
+  color: var(--white); /* Change this to the hover color you want */
+  background-color: var(--accent); /* Optional: Adds a background color on hover */
+ 
 }
 
 .skills-content {
@@ -466,6 +506,17 @@ section {
     z-index: 1;
     top: 15px;
     color-
+}
+
+.timeline-content:hover{
+  color: var(--white); /* Change this to the hover color you want */
+  background-color: var(--accent); /* Optional: Adds a background color on hover */
+ 
+}
+
+
+.timeline-item:hover .date {
+  color: var(--white); /* Change date color on hover */
 }
 
 .contact-item {
