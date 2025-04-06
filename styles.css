@@ -415,8 +415,9 @@ section {
 
 .project-image3 img {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain;
 }
 
 .project-image1 img {
@@ -768,6 +769,10 @@ footer {
     .quadrado, .cubes {
         display: none; /* Hide decorative elements on mobile */
     }
+    
+    .project-image3 img {
+        max-height: 350px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -850,5 +855,9 @@ footer {
     
     .social-links {
         gap: 1rem;
+    }
+    
+    .project-image3 img {
+        max-height: 300px;
     }
 }
