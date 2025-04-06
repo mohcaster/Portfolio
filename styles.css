@@ -680,7 +680,7 @@ footer {
     }
     
     .about-image {
-        max-height: 400px;
+        max-height: 75%;
     }
     
     .skills-content, 
@@ -771,7 +771,7 @@ footer {
     }
     
     .project-image3 img {
-        max-height: 350px;
+        max-height: 450px;
     }
 }
 
@@ -858,6 +858,6 @@ footer {
     }
     
     .project-image3 img {
-        max-height: 300px;
+        max-height: 400px;
     }
 }
